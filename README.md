@@ -5,7 +5,10 @@ Exemplo:
 https://codepen.io/FreeCodeCamp/full/ONjoLe/
 
 Como exemplo, irei consumir o webservice público:
-https://theysaidso.com/api/
+https://market.mashape.com
 que pode ser chamado com o comando:
 
-curl -v  -i -X GET http://quotes.rest/qod.json?category=inspire
+curl -X POST --include 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies' \
+  -H 'X-Mashape-Key: fIC4C3rGVVmshkkJiXMrWAre9v4Jp1zmdJUjsnqUUazYcvHUN8' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Accept: application/json'
