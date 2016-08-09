@@ -1,0 +1,36 @@
+.red {
+    color: rgb(231, 76, 60);
+    background-color: rgb(231, 76, 60);
+}
+
+.green {
+    color: rgb(39, 174, 96);
+    background-color: rgb(39, 174, 96);
+}
+
+.blue {
+    color: rgb(44, 62, 80);
+    background-color: rgb(44, 62, 80);
+}
+
+.yellow {
+    color: rgb(243, 156, 18);
+    background-color: rgb(243, 156, 18);
+}
+
+.content {
+    background-color: white;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 300px;
+}
+
+.quote {
+    padding: 40px;
+}
+
+.content button, span {
+    color: white;
+}
