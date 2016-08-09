@@ -13,6 +13,9 @@
 	}
 
 	$(document).ready(function () {
+
+		getQuote();
+
 		$("#new-quote").click(getQuote);
 	});
 
@@ -23,7 +26,9 @@
 			type: 'GET',
 			dataType: 'json',
 			success: setNewQuoteContent,
-			error: function() { alert('Failed to get Quote!'); },
+			error: function () {
+				console.log('Failed to get Quote!');
+			},
 			beforeSend: setHeader
 		});
 
@@ -41,7 +46,20 @@
 		console.log(data);
 		var quote = new Quote(data.quote, data.author);
 
-		$(".quote p").html(quote.text);
-		$(".quote footer").html(quote.author);
+		$(".quote").animate(
+			{
+				opacity: 0
+			}
+			, 400
+			, function () {
+				$(".quote p").html(quote.text);
+				$(".quote footer").html(quote.author);
+			});
+		$(".quote").animate(
+			{
+				opacity: 1
+			}
+			, 400);
+
 	}
 }());
