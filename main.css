@@ -18,6 +18,23 @@
     background-color: rgb(243, 156, 18);
 }
 
+.pink {
+    color: rgb(155, 89, 182);
+    background-color: rgb(155, 89, 182);
+}
+
+.orange {
+    color: rgb(251, 105, 100);
+    background-color: rgb(251, 105, 100);
+}
+
+.salmon {
+    color: rgb(189, 187, 153);
+    background-color: rgb(189, 187, 153);
+}
+
+
+
 .content {
     border-radius: 6px;
     box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.2);
@@ -26,7 +43,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    height: 250px;
 }
 
 .quote {
@@ -34,6 +50,14 @@
     padding: 40px;
 }
 
-.content button, span {
+.actions {
+    padding: 20px;
+}
+
+.content .buttons {
     color: white;
+}
+
+.content .buttons:hover, .content .buttons:focus, .content .buttons:active {
+    color: gainsboro;
 }
