@@ -1,10 +1,9 @@
-Tarefa executada a partir do Free Code Camp, pelo endereço:
-https://www.freecodecamp.com/challenges/build-a-random-quote-machine
+- A simple quote generetor to get inspired any moment.
 
-Exemplo:
-https://codepen.io/FreeCodeCamp/full/ONjoLe/
+DEMO: https://codepen.io/maiquelcraash/full/wWRwYE/
 
-Como exemplo, irei consumir o webservice público:
+
+- Data Origin Web Service
 https://market.mashape.com
 que pode ser chamado com o comando:
 
